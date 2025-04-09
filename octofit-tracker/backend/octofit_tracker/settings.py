@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "octofit_tracker_app",
-    "corsheaders",      # Enable CORS
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
