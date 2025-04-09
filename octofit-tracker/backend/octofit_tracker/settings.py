@@ -63,7 +63,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_METHODS = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
 CORS_ALLOW_HEADERS = ['*']
 
-
 ROOT_URLCONF = "octofit_tracker.urls"
 
 TEMPLATES = [
@@ -95,7 +94,11 @@ DATABASES = {
 #    }
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'octofit_db',
+        'NAME': 'octofit_db',  # Replace with your MongoDB database name
+        'CLIENT': {
+            'host': '127.0.0.1',  # MongoDB host
+            'port': 27017,        # MongoDB port
+        }
     }
 }
 
