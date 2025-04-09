@@ -92,6 +92,7 @@ DATABASES = {
 #        "ENGINE": "django.db.backends.sqlite3",
 #        "NAME": BASE_DIR / "db.sqlite3",
 #    }
+# Uncomment the above for SQLite
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'octofit_db',  # Replace with your MongoDB database name
